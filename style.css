@@ -1,0 +1,69 @@
+
+body {
+    background: #fafafa;
+
+  }
+a{
+    opacity: 0.6;
+    color: black;
+    font-size: 40px;
+    font-family: "VT323";
+    text-decoration: none;
+
+}
+a:hover{
+
+    opacity: 1;
+    font-size: 45px;
+    
+    }
+
+  .dino {
+    position: absolute;
+    bottom: 0;
+    background-image: url(dino.png);
+    width: 60px;
+    height: 60px;
+  }
+  
+  .cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(cactus.png);
+  }
+  
+  .game-over {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    font-size: 100px;
+    font-family: "VT323";
+    width: 99vw;
+    height: 97.5vh;
+    background-color: white
+  }
+  
+  @keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+  
+  .background {
+    position: absolute;
+    bottom: 45%;
+    background-image: url('background.png');
+    background-repeat: repeat-x;
+    animation: slideright 1500s infinite linear;
+    -webkit-animation: slideright 1500s infinite linear;
+    width: 99%;
+    height: 200px;
+  }
